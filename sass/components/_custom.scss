@@ -59,15 +59,22 @@ textarea:active {
 
   outline: 1px solid red;
 
-  //  width: 1200px;
-  // .document-header & {
-  //   display: flex;
-  // }
-  // .document-footer & {
-  //   display: flex;
-  //   align-items: baseline;
-  //   justify-content: space-between;
-  // }
+  .hero & {
+    display: block;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: start;
+    width: 768px;
+    .document-footer & {
+      align-items: baseline;
+      justify-content: space-between;
+    }
+  }
+
+  @media screen and (min-width: 1600px) {
+    width: 1200px;
+  }
 }
 
 .list {
