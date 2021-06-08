@@ -85,11 +85,56 @@ textarea:active {
   color: #2196f3;
 }
 
-@media screen and (max-width: 767px) {
-  .header-menu {
-    margin-bottom: 300px;
+.menu-button {
+  display: none;
+  padding: 0;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  outline: 1px solid red;
+}
+@media screen and (max-width: 727px) {
+  .menu-button {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-left: auto;
   }
+}
+
+.menu-button__icon-menu {
+  display: block;
+}
+.menu-button.is-open .menu-button__icon-menu {
+  display: none;
+}
+
+.menu-button__icon-close {
+  display: none;
+}
+.menu-button.is-open .menu-button__icon-close {
+  display: block;
+}
+
+.mobile-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-left: 25px;
+  display: none;
+  background-color: #ffffff;
+}
+.mobile-container.is-open {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
   .header-menu--right {
+    margin-top: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -149,6 +194,8 @@ textarea:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
   .header-social {
@@ -173,50 +220,4 @@ textarea:active {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
-}
-
-.menu-button {
-  display: none;
-  padding: 0;
-  margin: 0;
-  width: 40px;
-  height: 40px;
-  background: transparent;
-  border: none;
-  outline: 1px solid red;
-}
-@media screen and (max-width: 727px) {
-  .menu-button {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    margin-left: auto;
-  }
-}
-
-.menu-button__icon-menu {
-  display: block;
-}
-.menu-button.is-open .menu-button__icon-menu {
-  display: none;
-}
-
-.menu-button__icon-close {
-  display: none;
-}
-.menu-button.is-open .menu-button__icon-close {
-  display: block;
-}
-
-.mobile-container {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  padding-left: 40px;
-  display: none;
-  background-color: #ffffff;
-}
-.mobile-container.is-open {
-  display: block;
 }/*# sourceMappingURL=main.css.map */
