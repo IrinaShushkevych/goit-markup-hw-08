@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home work 8</title>
+    <title>Home work 7</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -21,33 +21,21 @@
     <!-- Header -->
     <header class="document-header">
       <div class="container">
-        <nav class="navigation">
-          <a href="./index.html" lang="en" class="logo">
-            <span class="logo__text">Web</span>Studio
-          </a>
-          <button
-            type="button"
-            class="menu-button"
-            aria-expanded="false"
-            aria-orientation="mobile-container"
-            data-menu-button
-          >
-            <svg
-              width=""
-              height="40"
-              aria-label="Переключатель мобильного меню"
-            >
-              <use
-                href="./images/icons.svg#menu_burger"
-                class="menu-button__icon-menu"
-              ></use>
-              <use
-                href="./images/icons.svg#icon-close"
-                class="menu-button__icon-close"
-              ></use>
+        <a href="./index.html" lang="en" class="logo">
+          <span class="logo__text">Web</span>Studio
+        </a>
+        <button class="burger-menu is-open" data-menu-button>
+          <svg class="burger-menu__icon" aria-label="Мобильное меню">
+            <use href="./images/icons.svg#menu_burger"></use>
+          </svg>
+        </button>
+        <div class="menu-container" data-menu>
+          <button class="burger-menu burger-menu--right " data-menu-button-close>
+            <svg class="burger-menu__icon burger-menu__icon--small" aria-label="Мобильное меню" >
+              <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
-          <div class="mobile-container" id="mobile-container" data-menu>
+          <nav class="navigation">
             <ul class="list header-menu">
               <li class="header-menu__list">
                 <a
@@ -57,54 +45,44 @@
                 >
               </li>
               <li class="header-menu__list">
-                <a href="./portfolio.html" class="header-menu__link"
-                  >Портфолио</a
-                >
+                <a href="./portfolio.html" class="header-menu__link">Портфолио</a>
               </li>
               <li class="header-menu__list">
                 <a href="" class="header-menu__link">Контакты</a>
               </li>
             </ul>
-            <ul class="list header-menu header-menu--right">
-              <li class="header-menu__list">
-                <a
-                  href="mailto:info@devstudo.com"
-                  class="header-menu__link header-menu__link--flex"
-                >
-                  <svg class="header-menu__icon" width="16" height="10">
-                    <use href="./images/icons.svg#icon-mail"></use>
-                  </svg>
-                  info@devstudo.com
-                </a>
-              </li>
-              <li class="header-menu__list">
-                <a
-                  href="tel:+380961111111"
-                  class="header-menu__link header-menu__link--flex"
-                >
-                  <svg class="header-menu__icon" width="16" height="10">
-                    <use href="./images/icons.svg#icon-phone"></use>
-                  </svg>
-                  +38 096 111 11 11
-                </a>
-              </li>
-            </ul>
-            <ul class="list header-social">
-              <li class="header-social__list">
-                <a href="" class="header-social__link">Instagram</a>
-              </li>
-              <li class="header-social__list">
-                <a href="" class="header-social__link">Twitter</a>
-              </li>
-              <li class="header-social__list">
-                <a href="" class="header-social__link">Facebook</a>
-              </li>
-              <li class="header-social__list">
-                <a href="" class="header-social__link">LinkedIn</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+          </nav>
+          <ul class="list header-menu header-menu--right">
+            <li class="header-menu__list">
+              <a
+                href="mailto:info@devstudo.com"
+                class="header-menu__link header-menu__link--flex   header-menu__link--flex--small"
+              >
+                <svg class="header-menu__icon" width="16" height="10">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+                info@devstudo.com
+              </a>
+            </li>
+            <li class="header-menu__list">
+              <a
+                href="tel:+380961111111"
+                class="header-menu__link header-menu__link--flex"
+              >
+                <svg class="header-menu__icon" width="16" height="10">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+          <ul class="list header-social">
+            <li class="header-social__item"><a href="" class="header-social__link">Instagram</a></li>
+            <li class="header-social__item"><a href="" class="header-social__link">Twitter</a></li>
+            <li class="header-social__item"><a href="" class="header-social__link">Facebook</a></li>
+            <li class="header-social__item"><a href="" class="header-social__link">LinkedIn</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- Main document -->
@@ -233,7 +211,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list__item">
+                  <li class=social-list__item">
                     <a href="" class="social-list__link">
                       <svg class="social-list__icon">
                         <use href="./images/icons.svg#icon-twitter"></use>
@@ -522,7 +500,7 @@
         <!-- </div> -->
       </div>
     </footer>
-    <!-- backdrop hidden -->
+    <!-- backdrop--hidden -->
     <div class="backdrop backdrop--hidden" data-modal>
       <div class="modal-form">
         <button class="modal-form__close" data-modal-close>
@@ -614,6 +592,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>

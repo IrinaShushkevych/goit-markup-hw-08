@@ -3,8 +3,8 @@
   style="position:absolute;width:0;height:0"
   xmlns="http://www.w3.org/2000/svg"
   overflow="hidden"
-><defs><symbol id="menu_burger" viewBox="0 0 23 15"><path
-        d="M0 2.5V0h22.5v2.5H0zm0 6.25h22.5v-2.5H0v2.5zM0 15h22.5v-2.5H0V15z"
+><defs><symbol id="menu_burger" viewBox="0 0 15 15"><path
+        d="M3 5.5v-1h9v1H3zM3 8h9V7H3v1zm0 2.5h9v-1H3v1z"
       /></symbol><symbol
       id="icon-check"
       width=""
