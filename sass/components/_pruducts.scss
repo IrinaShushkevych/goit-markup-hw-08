@@ -2,15 +2,24 @@
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  margin-right: calc(-1 * #{$card-margin});
-  margin-bottom: calc(-1 * #{$card-margin});
+
+  @media screen and (min-width: 768px) {
+    margin-right: calc(-1 * #{$card-margin});
+    margin-bottom: calc(-1 * #{$card-margin});
+  }
 }
 
 .products__item {
-  flex-basis: calc(100% / 3 - #{$card-margin});
-  margin-right: $card-margin;
-  margin-bottom: $card-margin;
   background: $footer-color;
+  width: 100%;
+  margin-bottom: $card-margin;
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - #{$card-margin});
+    margin-right: $card-margin;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 3 - #{$card-margin});
+  }
 }
 
 .products__link {

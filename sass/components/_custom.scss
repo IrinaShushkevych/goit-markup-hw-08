@@ -33,38 +33,56 @@ textarea:active {
   overflow: hidden;
 }
 
-// .section {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
+// .visually-hidden{
+//     position: absolute !important;
+//     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+//     clip: rect(1px, 1px, 1px, 1px);
+//     padding: 0 !important;
+//     border: 0 !important;
+//     height: 1px !important;
+//     width: 1px !important;
+//     overflow: hidden;
 // }
 
-// .section__title {
-//   font-weight: 700;
-//   font-size: 36px;
-//   line-height: 1.16;
-//   color: $header-color;
-//   text-align: center;
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
-//   margin-top: 0;
-//   margin-bottom: 50px;
-// }
+.section__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  color: $header-color;
+  text-align: center;
+
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
+}
 
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: block;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-
-  outline: 1px solid red;
-
-  .hero & {
-    display: block;
+  .document-header & {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   @media screen and (min-width: 768px) {
-    justify-content: start;
+    justify-content: center;
     width: 768px;
     .document-footer & {
       align-items: baseline;
@@ -72,8 +90,11 @@ textarea:active {
     }
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     width: 1200px;
+    .document-footer & {
+      display: flex;
+    }
   }
 }
 
@@ -112,5 +133,8 @@ textarea:active {
 
   .hero & {
     padding: 10px 32px;
+  }
+  .document-footer & {
+    margin: 0 auto;
   }
 }

@@ -1,0 +1,38 @@
+.logo {
+  display: block;
+  font-family: $font-accent;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+
+  color: $header-color;
+  text-decoration: none;
+
+  &--invers {
+    color: $footer-color;
+  }
+
+  .document-footer & {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+    .document-header & {
+      margin-right: 93px;
+    }
+    &--invers {
+      margin-bottom: 20px;
+      // color: $footer-color;
+    }
+  }
+}
+
+.logo__text {
+  color: $accent-color;
+}

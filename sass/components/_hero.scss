@@ -3,12 +3,8 @@
 }
 
 .hero__overlay {
-  // max-width: 1600px;
-  // height: 600px;
   margin-left: auto;
   margin-right: auto;
-  // padding-top: 200px;
-  // padding-bottom: 200px;
   height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
@@ -22,11 +18,15 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
   color: $footer-color;
   text-align: center;
 
-  outline: 1px solid green;
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
+  }
 }
 
 .hero__title {
@@ -42,7 +42,7 @@
   margin-top: 0;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
   }
