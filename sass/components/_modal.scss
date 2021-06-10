@@ -20,7 +20,8 @@
 
 .modal-form {
   position: absolute;
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   height: 609px;
   top: 50%;
   left: 50%;
