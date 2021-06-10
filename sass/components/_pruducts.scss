@@ -13,10 +13,12 @@
   background: $footer-color;
   width: 100%;
   margin-bottom: $card-margin;
+
   @media screen and (min-width: 768px) {
     width: calc(100% / 2 - #{$card-margin});
     margin-right: $card-margin;
   }
+
   @media screen and (min-width: 1200px) {
     width: calc(100% / 3 - #{$card-margin});
   }
@@ -27,6 +29,7 @@
   color: inherit;
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -37,6 +40,10 @@
 .products__img {
   position: relative;
   overflow: hidden;
+}
+
+.products__image {
+  width: 100%;
 }
 
 .products__overlay {

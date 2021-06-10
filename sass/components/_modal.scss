@@ -146,7 +146,6 @@
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
-
     color: rgba(117, 117, 117, 0.5);
   }
 }
@@ -159,6 +158,7 @@
   cursor: pointer;
   font-size: 12px;
   line-height: 1.17;
+
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;

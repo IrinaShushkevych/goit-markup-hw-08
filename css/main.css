@@ -45,13 +45,13 @@ textarea:active {
 }
 
 .section__title {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.18;
   color: #212121;
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .section__title {
@@ -74,8 +74,10 @@ textarea:active {
 }
 @media screen and (min-width: 768px) {
   .container {
-    justify-content: center;
     width: 768px;
+  }
+  .document-header .container {
+    justify-content: center;
   }
   .document-footer .container {
     align-items: baseline;
@@ -228,10 +230,12 @@ form .form-button {
   .menu-container {
     display: block;
     position: absolute;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
+    min-height: 500px;
     padding: 10px 15px 48px 40px;
     display: none;
     background-color: #ffffff;
@@ -425,12 +429,27 @@ form .form-button {
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: #2f303a;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg480.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
   text-align: center;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero__overlay .box {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg480@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg768.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero__overlay .box {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg768@2x.jpg);
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__overlay {
@@ -438,6 +457,12 @@ form .form-button {
     padding-bottom: 200px;
     max-width: 1600px;
     height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg1200.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero__overlay .box {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg1200@2x.jpg);
   }
 }
 
@@ -630,6 +655,10 @@ form .form-button {
   .teams__item:not(:last-child) {
     margin-bottom: 0;
   }
+}
+
+.teams__image {
+  width: 100%;
 }
 
 .teams__cards {
@@ -929,6 +958,10 @@ form .form-button {
 .products__img {
   position: relative;
   overflow: hidden;
+}
+
+.products__image {
+  width: 100%;
 }
 
 .products__overlay {

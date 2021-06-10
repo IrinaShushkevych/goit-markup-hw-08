@@ -1,5 +1,6 @@
 .our-work {
   display: none;
+
   @media screen and (min-width: 1200px) {
     display: block;
   }
@@ -13,6 +14,7 @@
 .works__item {
   flex-basis: calc((100% - 2 * 30px) / 3);
   position: relative;
+
   &:not(:last-child) {
     margin-right: 30px;
   }

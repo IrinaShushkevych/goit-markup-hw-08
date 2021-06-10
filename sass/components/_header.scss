@@ -17,10 +17,12 @@
   @media screen and (max-width: 767px) {
     display: block;
     position: absolute;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
+    min-height: 500px;
     padding: 10px 15px 48px 40px;
     display: none;
     background-color: $footer-color;

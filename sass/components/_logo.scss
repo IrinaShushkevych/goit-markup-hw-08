@@ -23,12 +23,13 @@
   @media screen and (min-width: 1200px) {
     font-size: 26px;
     line-height: 1.19;
+
     .document-header & {
       margin-right: 93px;
     }
+
     &--invers {
       margin-bottom: 20px;
-      // color: $footer-color;
     }
   }
 }

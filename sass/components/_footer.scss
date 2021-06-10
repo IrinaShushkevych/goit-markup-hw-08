@@ -4,6 +4,7 @@
   background-color: $footer-bg-color;
   color: $footer-color;
   text-align: center;
+
   @media screen and (min-width: 768px) {
     text-align: left;
   }
@@ -13,11 +14,13 @@
   display: block;
   margin-bottom: 60px;
   text-align: center;
+
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
   }
+
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
     margin-right: 93px;
@@ -33,6 +36,7 @@
 .adresses {
   font-style: normal;
   margin-bottom: 60px;
+
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
@@ -47,6 +51,7 @@
   &:not(:last-child) {
     margin-bottom: 8px;
   }
+
   @media screen and (min-width: 1200px) {
     &:not(:last-child) {
       margin-bottom: 9px;
@@ -58,18 +63,20 @@
   text-decoration: none;
   color: $footer-link-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
     color: $accent-color;
   }
+
   &--inverse {
     color: $footer-color;
   }
 }
 
 .footer-social {
-  // margin-left: 70px;
   margin-bottom: 60px;
+
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
   }
@@ -85,11 +92,11 @@
 
 .subscription {
   text-align: center;
-  // margin-left: 93px;
 }
 
 .subscription__content {
   display: block;
+
   @media screen and (min-width: 1200px) {
     display: flex;
   }
@@ -112,9 +119,11 @@
   &:hover {
     border: 1px solid $accent-color;
   }
+
   @media screen and (min-width: 768px) {
     width: 450px;
   }
+
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
     margin-right: 12px;

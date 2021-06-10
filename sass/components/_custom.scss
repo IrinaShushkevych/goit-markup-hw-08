@@ -47,6 +47,7 @@ textarea:active {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -54,14 +55,13 @@ textarea:active {
 }
 
 .section__title {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.18;
   color: $header-color;
   text-align: center;
-
-  margin-top: 0;
-  margin-bottom: 30px;
 
   @media screen and (min-width: 1200px) {
     font-size: 36px;
@@ -75,6 +75,7 @@ textarea:active {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+
   .document-header & {
     display: flex;
     align-items: center;
@@ -82,8 +83,12 @@ textarea:active {
   }
 
   @media screen and (min-width: 768px) {
-    justify-content: center;
     width: 768px;
+
+    .document-header & {
+      justify-content: center;
+    }
+
     .document-footer & {
       align-items: baseline;
       justify-content: space-between;
@@ -92,6 +97,7 @@ textarea:active {
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
+
     .document-footer & {
       display: flex;
     }
@@ -134,6 +140,7 @@ textarea:active {
   .hero & {
     padding: 10px 32px;
   }
+
   .document-footer & {
     margin: 0 auto;
   }
