@@ -1076,6 +1076,9 @@ form .form-button {
   top: 8px;
   height: 30px;
   width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #ffffff;
   color: #212121;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -1212,7 +1215,6 @@ form .form-button {
 
 .modal-form__link {
   color: #2196f3;
-  margin-left: 4px;
 }
 
 .modal-form__block-button {
