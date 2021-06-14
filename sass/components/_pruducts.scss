@@ -4,7 +4,7 @@
   padding: 0;
 
   @media screen and (min-width: 768px) {
-    margin-right: calc(-1 * #{$card-margin});
+    // margin-right: calc(-1 * #{$card-margin});
     margin-bottom: calc(-1 * #{$card-margin});
   }
 }
@@ -15,12 +15,22 @@
   margin-bottom: $card-margin;
 
   @media screen and (min-width: 768px) {
-    width: calc(100% / 2 - #{$card-margin});
-    margin-right: $card-margin;
+    width: calc((100% - #{$card-margin}) / 2);
+    // width: calc(100% / 2 - #{$card-margin});
+    // margin-right: $card-margin;
+    &:nth-child(2n - 1) {
+      margin-right: $card-margin;
+    }
   }
 
   @media screen and (min-width: 1200px) {
-    width: calc(100% / 3 - #{$card-margin});
+    width: calc((100% - 2 * #{$card-margin}) / 3);
+    &:nth-child(2n - 1) {
+      margin-right: 0;
+    }
+    &:not(:nth-child(3n)) {
+      margin-right: $card-margin;
+    }
   }
 }
 
