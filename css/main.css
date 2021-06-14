@@ -249,6 +249,7 @@ form .form-button {
 
 .burger-menu {
   display: block;
+  padding: 0;
   width: 40px;
   height: 40px;
   background-color: transparent;
