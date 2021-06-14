@@ -1,5 +1,7 @@
 .backdrop {
   position: fixed;
+  padding-left: 15px;
+  padding-right: 15px;
   top: 0;
   left: 0;
   width: 100vw;
@@ -16,7 +18,7 @@
     pointer-events: none;
     visibility: hidden;
   }
-  outline: 1px solid red;
+  // outline: 1px solid red;
 }
 
 .modal-form {
