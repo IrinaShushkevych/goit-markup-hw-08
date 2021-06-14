@@ -1,14 +1,9 @@
-html {
-  overflow-x: hidden;
-}
-
 body {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   letter-spacing: 0.03em;
   color: #757575;
-  overflow-x: hidden;
 }
 
 img {
@@ -697,18 +692,25 @@ form .form-button {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  margin-right: -30px;
   margin-bottom: -30px;
 }
 
 .partners__item {
-  margin-right: 30px;
   margin-bottom: 30px;
-  width: calc((100% - 2 * 30px) / 2);
+  width: calc((100% - 1 * 30px) / 2);
+}
+.partners__item:nth-child(2n-1) {
+  margin-right: 30px;
 }
 @media screen and (min-width: 768px) {
   .partners__item {
-    width: calc((100% - 3 * 30px) / 3);
+    width: calc((100% - 2 * 30px) / 3);
+  }
+  .partners__item:nth-child(2n-1) {
+    margin-right: 0;
+  }
+  .partners__item:not(:nth-child(3n)) {
+    margin-right: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
