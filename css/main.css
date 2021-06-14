@@ -1072,6 +1072,7 @@ form .form-button {
 
 .modal-form__close {
   position: absolute;
+  padding: 0;
   right: 8px;
   top: 8px;
   height: 30px;
