@@ -148,8 +148,8 @@
     display: inline-flex;
     color: $primary-text-color;
     font-weight: 500;
-    font-size: calc(26px + 8 * (100vw / 768));
-    // font-size: 34px;
+
+    font-size: 34px;
     line-height: 1.176;
     letter-spacing: 0.02em;
     &--small {
@@ -158,6 +158,10 @@
     }
     &:not(:last-child) {
       margin-bottom: 32px;
+    }
+
+    @media screen and (max-width: 479px) {
+      font-size: calc(0px + 34 * (100vw / 480));
     }
   }
 
@@ -222,7 +226,11 @@
   text-decoration: none;
   color: $accent-color;
   font-weight: 500;
-  font-size: calc(10px + 8 * (100vw / 1200));
+  font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
+
+  @media screen and (max-width: 479px) {
+    font-size: calc(0px + 18 * (100vw / 480));
+  }
 }
