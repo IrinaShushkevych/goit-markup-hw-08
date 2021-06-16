@@ -987,7 +987,6 @@ form .form-button {
 }
 
 .products__item {
-  overflow: hidden;
   background: #ffffff;
   width: 100%;
   margin-bottom: 30px;
