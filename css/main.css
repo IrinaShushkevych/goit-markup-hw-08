@@ -1141,6 +1141,13 @@ form .form-button {
     min-height: 581px;
   }
 }
+@media screen and (max-height: 610px) {
+  .modal-form {
+    top: 0;
+    left: 50%;
+    transform: perspective(600px) translate(-50%, 0) rotateX(0deg);
+  }
+}
 
 .modal-form__close {
   position: absolute;
