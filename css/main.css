@@ -1051,7 +1051,6 @@ form .form-button {
   height: 100%;
   padding: 77px 24px;
   margin: 0;
-  overflow-y: scroll;
   background-color: rgba(33, 150, 243, 0.9);
   color: #ffffff;
   opacity: 0;
